@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<header class="cabecalho">
+    <nav class="cabecalho_menu">
+        <a href="index.html" class="cabecalho_logo">
+            <img src="assets/indexxo.jpg" alt="Logo" class="cabecalho_logo_imagem">
+        </a>
+        <a class="cabecalho_menu_link" href="index.html">HOME</a>
+        <a class="cabecalho_menu_link" href="sobre.html">PRÊMIOS</a>
+        <a class="cabecalho_menu_link" href="albuns.html">ALBUNS</a>
+        <a class="cabecalho_menu_link" href="ingressos.html">INGRESSOS</a>
+        <a class="cabecalho_menu_link" href="areafa.html">ÁREA FÃ</a>
+    </nav>
+</header>
+
+</header>
+<body>
+    <!-- Slideshow -->
+    <div class="slideshow-container">
+        <div class="slides-wrapper">
+            <img src="assets/bannertw.jpg" alt="Imagem 1" class="slide">
+            <img src="assets/bannertw1.jpg" alt="Imagem 2" class="slide">
+            <img src="assets/bannertw2.jpg" alt="Imagem 3" class="slide">
+        </div>
+    </div>
+
+    <!-- Biografia -->
+    <section class="biografia">
+        <h1>Biografia</h1>
+        <p>
+            Abel Makkonen Tesfaye, conhecido mundialmente como The Weeknd, nasceu em Toronto, Canadá, em 16 de fevereiro de 1990. Ele cresceu ouvindo uma diversidade de gêneros musicais, como soul, hip hop, funk e rock, o que influenciou seu estilo único de R&B. A adolescência de Tesfaye foi conturbada, e aos 17 anos ele abandonou a escola e saiu de casa, um período difícil que ele descreveu como uma decepção para sua mãe.
+        </p>
+        <p>
+            O nome artístico "The Weeknd" foi adotado por Tesfaye após deixar o colégio e a casa de sua mãe, com a grafia alterada para evitar conflitos com uma banda canadense chamada "The Weekend". Em 2010, ele começou a postar suas músicas no YouTube, mantendo sua identidade em anonimato, até que, em 2011, lançou três mixtapes: House of Balloons, Thursday e Echoes of Silence. Essas obras foram bem recebidas pela crítica e ajudaram a estabelecer seu nome na indústria musical.
+        </p>
+        <p>
+            Em 2012, o cantor lançou o álbum Trilogy, uma compilação das canções de seus mixtapes, com algumas músicas novas. No ano seguinte, veio o primeiro álbum de estúdio, Kiss Land. Porém, foi com o segundo álbum, Beauty Behind the Madness, que The Weeknd alcançou sucesso global. O disco foi o primeiro a atingir a primeira posição na Billboard 200, com os singles "Can't Feel My Face", "The Hills" e "Earned It" dominando as paradas.
+        </p>
+        <p>
+            Seu terceiro álbum, Starboy (2016), consolidou ainda mais sua posição no topo das paradas musicais. A música título do álbum, "Starboy", foi o terceiro single de Tesfaye a atingir o primeiro lugar nas principais paradas dos EUA e Reino Unido. Essa era marcou um amadurecimento no estilo do cantor, com influências do pop e música eletrônica.
+        </p>
+        <p>
+            Em 2018, The Weeknd lançou de surpresa o EP My Dear Melancholy, que rapidamente alcançou o topo das paradas nos Estados Unidos. Seu trabalho ao longo dos anos é marcado por uma mistura única de R&B atmosférico, letras profundas e uma habilidade de se reinventar constantemente, consolidando-se como um dos maiores nomes da música contemporânea.
+        </p>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        const wrapper = document.querySelector('.slides-wrapper');
+        const slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
+
+        function showSlides() {
+            currentIndex++;
+            if (currentIndex >= slides.length) currentIndex = 0;
+
+            const offset = -currentIndex * 100; // Calcula a posição
+            wrapper.style.transform = `translateX(${offset}%)`;
+        }
+
+        setInterval(showSlides, 2000); // Troca a cada 2 segundos
+    </script>
+</body>
+<footer class="rodape">
+    <p>Todos os direitos reservados @2024 | TheWeeknd </p>
+</footer>
+</html>

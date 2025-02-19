@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<header class="cabecalho">
+    <nav class="cabecalho_menu">
+        <a href="index.html" class="cabecalho_logo">
+            <img src="assets/indexxo.jpg" alt="Logo" class="cabecalho_logo_imagem">
+        </a>
+        <a class="cabecalho_menu_link" href="index.html">HOME</a>
+        <a class="cabecalho_menu_link" href="sobre.html">PRÊMIOS</a>
+        <a class="cabecalho_menu_link" href="albuns.html">ALBUNS</a>
+        <a class="cabecalho_menu_link" href="ingressos.html">INGRESSOS</a>
+        <a class="cabecalho_menu_link" href="areafa.html">ÁREA FÃ</a>
+    </nav>
+</header>
+<body>
+    <main class="apresentacao">
+        <section class="apresentacao_conteudo">
+            <div class="apresentacao_layout">
+                <!-- Formulário -->
+                <div class="formulario_caixa">
+                    <h1 class="apresentacao_conteudo_titulo">Contato</h1>
+                    <form action="https://formsubmit.co/giovannakrausecintra57@gmail.com"
+                          id="formulario-contato"
+                          method="post">
+                        <div class="apresentacao_formulario">
+                            <label class="apresentacao_formulario_label" for="nome">Nome:</label>
+                            <input class="apresentacao_formulario_input" type="text" id="nome" name="nome" maxlength="100" placeholder="Digite o seu nome" required />
+                        </div>
+                        <div class="apresentacao_formulario">
+                            <label class="apresentacao_formulario_label" for="email">Email:</label>
+                            <input class="apresentacao_formulario_input" type="email" id="email" name="email" maxlength="100" placeholder="Digite o seu email" required />
+                        </div>
+                        <div class="apresentacao_formulario">
+                            <label class="apresentacao_formulario_label" for="mensagem">Mensagem:</label>
+                            <textarea class="apresentacao_formulario_textarea" id="mensagem" name="mensagem" rows="4" maxlength="300" placeholder="Digite a sua mensagem" required></textarea>
+                        </div>
+                        <div>
+                            <button class="apresentacao_botao" type="submit">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+ <h2> Confira a última entrevista:
+                <!-- Vídeo -->
+                <div class="video_caixa">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y35MiSgO8vI?si=LlLD6vdf3pU169PG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Todos os direitos reservados @2024 | TheWeeknd </p>
+    </footer>
+</body>
+</html>

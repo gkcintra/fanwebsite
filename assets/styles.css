@@ -1,0 +1,537 @@
+/* Importação de fontes */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bangers&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bangers&family=DM+Serif+Text:ital@0;1&family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bangers&family=DM+Serif+Text&family=Faustina:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&display=swap');
+
+
+/* Definindo variáveis */
+:root {
+    --cor-primaria: #000000; /* Preto */
+    --cor-secundaria: #da2525; /* Bege claro */
+    --cor-terciaria: #c13934; /* Bege médio */
+    --cor-acento: #96e9ab; /* Verde claro */
+    --cor-perigo: #7d0004; /* Vermelho escuro */
+    --cor-hover: #dc6825cb; /* Cinza escuro */
+    --fonte-titulo: "Bangers", cursive;
+    --fonte-destaque: "Orbitron", sans-serif;
+    --fonte-texto: "Audiowide", sans-serif;
+    --fonte-corpo: "Faustina", sans-serif;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Fundo preto */
+    color: #ffffff; /* Cor do texto branco para contraste */
+    line-height: 1.6;
+    text-align: center; /* Centraliza o texto em todo o body */
+}
+
+.albuns_titulo {
+    font-family: var(--fonte-destaque);
+}
+
+/* Reset básico */
+body, h3, p, a, button, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #000000; /* Fundo preto */
+    padding: 10px 0;
+}
+
+/* Menu de navegação */
+.cabecalho_menu {
+    font-family: var(--fonte-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Logo */
+.cabecalho_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px; /* Ajuste do espaço entre logo e links */
+}
+
+.cabecalho_logo_imagem {
+    height: 50px; /* Ajuste a altura conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease;
+}
+
+
+
+
+/* Efeito de hover na imagem */
+.cabecalho_logo_imagem:hover {
+    transform: scale(1.1); /* Leve aumento no logo ao passar o mouse */
+}
+
+/* Links do menu */
+.cabecalho_menu_link {
+    color: #ffffff; /* Texto branco */
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 36px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+/* Efeito de hover nos links */
+.cabecalho_menu_link:hover {
+    background-color: #808080; /* Cor de hover cinza */
+    text-align: center;
+    border-radius: 30px;
+}
+
+
+
+
+/* Estilo do conteúdo principal */
+.conteudo {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    font-family: var(--fonte-titulo);
+    
+}
+
+/* Estilos de caixas e seções */
+.apresentacao, .premios, .noticia {
+    font-family: var(--fonte-corpo);
+    background-color: #ffffff; /* Fundo branco */
+    color: #333333; /* Cor do texto escuro */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras leves */
+}
+
+/* Botões */
+.apresentacao_botao {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    width: 100%;
+}
+
+.apresentacao_botao:hover {
+    background-color: #555;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+    margin-top: 30px;
+}
+
+/* Slideshow */
+.slideshow-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    flex-shrink: 0;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Seção de notícias */
+.noticias {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+.noticia {
+    flex: 1;
+    max-width: 30%; /* Cada bloco ocupa no máximo 30% da largura */
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.noticia:hover {
+    transform: translateY(-10px); /* Levanta o bloco */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+    background-color: #ccc5c5; /* Altera a cor de fundo */
+}
+
+.noticia_titulo {
+    font-family: var(--fonte-destaque);
+    font-size: 50px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.noticia_conteudo {
+    font-family: var(--fonte-titulo);
+    font-size: 24px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.sem_sublinhado {
+    text-decoration: none;
+}
+
+
+
+/* Responsividade para a seção de notícias */
+@media (max-width: 768px) {
+    .noticias {
+        flex-direction: column;
+    }
+
+    .noticia {
+        max-width: 100%;
+    }
+}
+
+/* Seção de premiações */
+.premios {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.premios h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ano-premio {
+    margin-bottom: 30px;
+}
+
+.ano-premio h3 {
+    font-size: 24px;
+    color: var(--cor-secundaria);
+    border-bottom: 2px solid var(--cor-secundaria);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.ano-premio li {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .cabecalho_menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .premios {
+        padding: 10px;
+    }
+
+    .premios h2 {
+        font-size: 24px;
+    }
+
+    .ano-premio h3 {
+        font-size: 20px;
+    }
+
+    .ano-premio li {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para a biografia */
+.biografia {
+    font-family: var(fon);
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.biografia h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.biografia p {
+    margin: 10px 0;
+    text-align: justify;
+    color: #555;
+    text-indent: 2rem;
+}
+
+/* Estilos gerais do layout */
+.apresentacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.apresentacao_layout {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Formulário */
+.formulario_caixa {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Reset básico */
+body, h3, p, a, button, table, th, td {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.cabecalho {
+    background-color: #222;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.cabecalho_menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cabecalho_menu_link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+}
+
+
+
+.conteudo {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+h1 {
+    font-family: var(--fonte-destaque);
+    font-size: 45px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: rgb(251, 249, 249);
+    margin-bottom: 20px;
+}
+
+.evento {
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo na vertical */
+    align-items: center; /* Centraliza os itens dentro de evento */
+    gap: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.confira {
+    font-family: var(--fonte-destaque);
+    font-size: 25px;
+}
+
+.evento_info {
+    text-align: center; /* Centraliza o texto dentro do bloco de informações */
+    max-width: 800px;
+}
+
+.evento_data {
+    font-family: var(--fonte-corpo);
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
+
+.evento_nome {
+    font-family: var(--fonte-destaque);
+    font-size: 38px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.evento_local {
+    font-family: var(--fonte-corpo);
+    font-size: 26px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Estilos da tabela */
+.tabela-ingressos {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    text-align: center; /* Centraliza o conteúdo das células */
+}
+
+.tabela-ingressos th, .tabela-ingressos td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.tabela-ingressos th {
+    background-color: #e80d0d;
+    font-size: 36px;
+}
+
+.tabela-ingressos td {
+    font-size: 24px;
+}
+
+
+
+/* Estilos dos botões */
+.evento_botoes {
+    display: flex;
+    justify-content: center; /* Centraliza os botões */
+    gap: 10px;
+}
+
+.botao {
+    font-family: var(--fonte-titulo);
+    padding: 20px 40px;
+    background-color: var(--cor-secundaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 34px;
+}
+
+.botao:hover {
+    background-color: #c0392b;
+}
+
+.apresentacao_conteudo_titulo {
+    font-family: var(--fonte-titulo);
+}
+
+.apresentacao_formulario_label {
+    font-size: 20px;
+    color: #000000;
+    font-family: var(--fonte-destaque);
+}
+
+.apresentacao_formulario_input, .apresentacao_formulario_textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: var(--fonte-corpo);
+}
+
+
+
+.apresentacao_botao {
+    padding: 10px 15px;
+    font-family: var(--fonte-titulo);
+    background-color: var(--cor-secundaria);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.apresentacao_botao:hover {
+    background-color: #c0392b;
+}
+
+/* Estilos para o vídeo */
+.video_caixa {
+    margin-top: 20px;
+}
+
+.video_responsivo {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 10px;
+}
+
+.rodape {
+    color: var(--cor-secundaria);
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-weight: 400;
+    font-size: 1rem;
+  }
